@@ -16,6 +16,7 @@ print(g)
 h=3**2   #exponentiation operator -equivalent to 3X3
 print(h)
 
+
          #Exercise
   #operations
 i=3+4  #addition
@@ -30,7 +31,7 @@ m=4/3   #division
 print(m)
 n=3**4   #exponention
 print(n)
-o=3//4   #floor division
+o=3//4   #floor division 
 print(o)
 
 #Strings
