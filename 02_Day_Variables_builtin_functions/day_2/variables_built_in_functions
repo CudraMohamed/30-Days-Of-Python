@@ -1,5 +1,4 @@
 #built-in functions
-from operator import truediv
 
 
 print('Hello, World !') #print the text valu
