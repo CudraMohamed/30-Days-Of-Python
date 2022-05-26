@@ -53,3 +53,43 @@ print(formated_string)
 a=5
 b=6
 print(f'{a}+{b}={a+b}')
+
+#Python Strings as sequence of characters-
+# unpacking strings
+language = "Python"
+a,b,c,d,e,f = language
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+#String indexing
+language = 'Python'
+first_letter = language[0]
+print(first_letter)
+last_letter = language[-1]
+print(last_letter)
+
+#String slicing
+language = 'Python'
+first_three_letters = language[0:3]  #emits the last value
+print(first_three_letters)
+last_three=language[-3:]
+print(last_three)   #prints all the value to the end of the sentence
+
+#Reversing strings
+greeting = "Hello, World!"
+print(greeting[::-1])
+
+#Skipping characters while slicing
+language = 'Python'
+pto= language[0:6:2]
+print(pto)
+name='Cudra'
+cda=name[0:5:2]
+print(cda)
+stationery='pens'
+pn=stationery[0:4:3]
+print(pn)
