@@ -1,5 +1,6 @@
 # A String could be a single character or bunch of texts
 from base64 import b64decode
+from pickletools import string1
 
 
 letter = 'p'
@@ -113,13 +114,13 @@ print(results)
 challenge = 'thirty days of python'
 sub_string = 'da'
 print(challenge.index(sub_string))  # 7
-print(challenge.index(sub_string, 9)) # error
+# print(challenge.index(sub_string, 9)) # error
 #
 #rindex(): Returns the highest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1)
 challenge = 'thirty days of python'
 sub_string = 'da'
 print(challenge.rindex(sub_string))  # 8
-print(challenge.rindex(sub_string, 9)) # error
+# print(challenge.rindex(sub_string, 9)) # error
 #isalnum(): Checks alphanumeric character
 challenge = 'ThirtyDaysPython'
 print(challenge.isalnum()) # True
@@ -208,3 +209,117 @@ challenge = 'thirty days of python'
 print(challenge.startswith('thirty')) # True
 challenge = '30 days of python'
 print(challenge.startswith('thirty')) # False
+
+#Exercise
+#Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+string1='Thirty'
+string2='Days'
+string3='Of'
+string4='Python'
+print(string1+' '+string2+' '+string3+' '+string4)
+#Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+string5='Coding'
+string6='For'
+string7='All'
+print(string5+' '+string6+' '+string7)
+#Declare a variable named company and assign it to an initial value "Coding For All".
+company = "Coding For All"
+#Print the variable company using print().
+print(company)
+#Print the length of the company string using len() method and print().
+print(len(company))
+#Change all the characters to uppercase letters using upper() method.
+print(company.upper())
+#Change all the characters to lowercase letters using lower() method.
+print(company.lower())
+#Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+#Cut(slice) out the first word of Coding For All string.
+print(company.strip('Coding'))
+# Check if Coding For All string contains a word Coding using the method index, find or other methods.
+print(company.find('Coding'))
+print(company.rfind('Coding'))
+print(company.rindex('Coding'))
+print(company.index('Coding'))
+# Replace the word coding in the string 'Coding For All' to Python.
+print(company.replace('Coding','Python'))
+# Change Python for Everyone to Python for All using the replace method or other methods.
+python = 'Python for Everyone'
+print(python)
+print(python.replace('Everyone','All'))
+# Split the string 'Coding For All' using space as the separator (split()) .
+print('Coding For All'.split())
+# "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" .split(','))
+# What is the character at index 0 in the string Coding For All.
+print(company[0])
+# What is the last index of the string Coding For All.
+print(company.rfind('l'))
+# What character is at index 10 in "Coding For All" string.
+print(company[10])
+# Create an acronym or an abbreviation for the name 'Python For Everyone'.
+print('Python For Everyone'[0],'Python For Everyone'[7],'Python For Everyone'[11])
+# Create an acronym or an abbreviation for the name 'Coding For All'.
+print(company[0],company[7],company[11])
+# Use index to determine the position of the first occurrence of C in Coding For All.
+print(company.find('C'))
+# Use index to determine the position of the first occurrence of F in Coding For All.
+print(company.find('F'))
+# Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print(company.rfind('l'))
+# Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('You cannot end a sentence with because because because is a conjunction'.find('because'))
+# Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('You cannot end a sentence with because because because is a conjunction'.rfind('because'))
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('You cannot end a sentence with because because because is a conjunction'.strip('because'))
+# Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('You cannot end a sentence with because because because is a conjunction'.find('because'))
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('You cannot end a sentence with because because because is a conjunction'.replace('because',''))
+# Does ''Coding For All' start with a substring Coding?
+print(company.startswith('Coding'))
+# Does 'Coding For All' end with a substring coding?
+print(company.endswith('coding'))
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+print('   Coding For All      ' .strip())
+# Which one of the following variables return True when we use the method isidentifier():
+identifier='30DaysOfPython'
+identifier_2='thirty_days_of_python'
+print(identifier.isidentifier())
+print(identifier_2.isidentifier())
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+py_libraries='Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'
+print('#'.join(py_libraries))
+# Use the new line escape sequence to separate the following sentences.
+print('I am enjoying this challenge.\nI just wonder what is next.')
+# Use a tab escape sequence to write the following lines.
+
+print('Name      Age     Country   City')
+print('Asabeneh  250     Finland   Helsinki')
+# Use the string formatting method to display the following:
+# radius = 10
+# area = 3.14 * radius ** 2
+# The area of a circle with radius 10 is 314 meters square.
+radius=10
+area = 3.14 *radius **2
+print('The area of a circle with radius {} is {} meters square.'.format(radius,area))
+# Make the following using string formatting methods:
+a=8
+b=6
+# 8 + 6 = 14
+print('{}+{}={}'.format(a,b,a+b))
+# 8 - 6 = 2
+print('{}-{}={}'.format(a,b,a-b))
+# 8 * 6 = 48
+print('{}*{}={}'.format(a,b,a*b))
+# 8 / 6 = 1.33
+print('{}/{}={}'.format(a,b,a/b))
+# 8 % 6 = 2
+print('{}%{}={}'.format(a,b,a%b))
+# 8 // 6 = 1
+print('{}//{}={}'.format(a,b,a//b))
+# 8 ** 6 = 262144
+print('{}**{}={}'.format(a,b,a**b))
