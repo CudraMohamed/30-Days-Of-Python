@@ -106,12 +106,16 @@ del B
 age_copy = set(age)
 print(age_copy)
 print(len(age),(len(age_copy)))
+
 # Explain the difference between the following data types: string, list, tuple and set
 #A string is an array that take either one or more unicode
 # A list takes in different data types and it is ordered
 # Tuple takes in different data types and it is unordered and allows duplicates
 # Set takes in different data types but does not allow duplication of items
-# I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+
+# I am a teacher and I love to inspire and teach people. 
+# How many unique words have been used in the sentence? 
+# Use the split methods and set to get the unique words.
 word = 'I am a teacher and I love to inspire and teach people.'
 splitting = word.split()
 print(splitting)
