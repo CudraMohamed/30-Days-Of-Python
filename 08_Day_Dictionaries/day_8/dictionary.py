@@ -45,3 +45,37 @@ print(keys)
 
 values = dict3.values()      #getting values in list
 print(values)
+
+#Exercice
+dog = {}
+print(dog)
+dog=dict()
+print(dog)
+
+new_list = {'name': 'Fufi', 'color': 'Brown', 'breed': 'German shepherd', 'legs': 'four', 'age': 2}
+dog.update(new_list)        #adding items to a list using .update()
+print(dog)
+
+student = {'first_name':'Brenda', 'last_name':'Murugi', 'gender':'Female', 'age':22, 'marital status':'Single', 'skills':['swimming','Organisational skills','UI/UX Design'], 'country':'Kenya', 'city':'Nairobi' ,'address':'P.O.BOX'}
+print (student)
+print(len(student))
+
+print(type(student['skills']))          #type of the values
+
+new_skills=['dancing','drawing']
+student['skills'].extend(new_skills)        #adding more skills in the skills value list
+print(student)
+
+key= student.keys()
+print(key)                  #getting keys in a list
+
+value = student.values()
+print(value)                #getting values in a list
+
+print(student.items())      #changing dictionary to a list of  tuple
+
+del student['address']      #deleting an item from a dict
+print(student)
+
+del dog         #deleting a dict
+# print(dog)  
