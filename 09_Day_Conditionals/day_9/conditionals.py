@@ -1,6 +1,9 @@
 #Conditional execution - a block of one or more statements will be executed if a certain expression is true
 #Repetitive execution- a block or more statement will be repetitively executed as long as a certain expression is true
 #If condition - checks if condition is true
+from re import X
+
+
 a=3
 if a >0:
     print('A is a positive number')
@@ -133,6 +136,19 @@ elif marks in range(0,49+1):
 # December, January or February, the season is Winter.
 #  March, April or May, the season is Spring 
 # June, July or August, the season is Summer
+
+def months():
+    month=(input('Enter a month: '))
+    
+    if month in ('September','October','November'):
+        print("The season is Autumn")
+    elif month in ('December','January','February'): 
+         print('The season is Winter')
+    elif month in ('March','April','May'):
+        print('The season is Spring')
+    elif month in ('June','July','August'):
+        print('The season is Summer')
+months()
 
 # The following list contains some fruits:
 
