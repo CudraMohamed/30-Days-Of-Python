@@ -67,3 +67,31 @@ def count_char(word):
             results[x]=1
     print(results)
 count_char('Cudra')
+
+
+#Given an interger 165 ,write a program that prints the sum of the digits . The expected output is 12
+# def num():
+#     for x in str(165):
+#         x+=1
+#         print(x)
+# num()
+
+greetings = ['Merhaba','Hello','Bonjour','Hola']
+index=0
+while index<len(greetings):
+    x=greetings[index]
+    print(len(x))
+    index+=1
+    
+tuple1=(1,2,3,4,5,6)
+print(tuple1[2:4])
+
+numbers = (10,15,24,10,29,34,45,10)
+x=numbers.count(10)
+print(x)
+
+x=len(numbers)
+print(x)
+
+#A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+#Ask the user for their salary and year of service and print the net bonus amount. Write a python code to implement this scenario.
