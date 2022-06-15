@@ -151,27 +151,43 @@ def months():
 months()
 
 # The following list contains some fruits:
-
-# fruits = ['banana', 'orange', 'mango', 'lemon']
-# If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+# If a fruit doesn't exist in the list add the fruit to the list and print the modified list.
+# If the fruit exists print('That fruit already exist in the list')
+fruits = ['banana', 'orange', 'mango', 'lemon']
+if 'eggplant' in fruits:
+    print('That food already exist in the list')
+elif 'eggplant' not in fruits:
+    fruits.append('eggplant')
+    print(fruits)
 
 # Exercises: Level 3
 # Here we have a person dictionary. Feel free to modify it!
 
-#         person={
-#     'first_name': 'Asabeneh',
-#     'last_name': 'Yetayeh',
-#     'age': 250,
-#     'country': 'Finland',
-#     'is_marred': True,
-#     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-#     'address': {
-#         'street': 'Space street',
-#         'zipcode': '02210'
-#     }
-#     }
+    person={
+    'first_name': 'Nash',
+    'last_name': 'Ash',
+    'age': 290,
+    'country': 'Kenya',
+    'is_married': False,
+    'skills': ['JavaScript', 'React', 'Html/Css', 'Kotlin', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
 #  Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+if 'skills' in person.keys():
+    print (j)
+else:
+    print(False)
 #  Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
-#  If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+
+if 'skills' in person.keys() and 'skills'[-1] in  person.values():
+    print('Skills and Python available')
+else:
+    print('Not available')
+#  If a person skills has only JavaScript and React, print('He is a front end developer'), 
+# if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB,
+#  Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
 #  If the person is married and if he lives in Finland, print the information in the following format:
 #     Asabeneh Yetayeh lives in Finland. He is married.

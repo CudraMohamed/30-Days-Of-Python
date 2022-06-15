@@ -70,11 +70,12 @@ count_char('Cudra')
 
 
 #Given an interger 165 ,write a program that prints the sum of the digits . The expected output is 12
-# def num():
-#     for x in str(165):
-#         x+=1
-#         print(x)
-# num()
+def num():
+    y=0
+    for x in str(165):
+        y+=int(x)
+        print(y)
+num()
 
 greetings = ['Merhaba','Hello','Bonjour','Hola']
 index=0
