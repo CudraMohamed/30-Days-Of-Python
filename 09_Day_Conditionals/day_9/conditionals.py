@@ -1,7 +1,6 @@
 #Conditional execution - a block of one or more statements will be executed if a certain expression is true
 #Repetitive execution- a block or more statement will be repetitively executed as long as a certain expression is true
 #If condition - checks if condition is true
-from re import X
 
 
 a=3
@@ -167,27 +166,38 @@ elif 'eggplant' not in fruits:
     'first_name': 'Nash',
     'last_name': 'Ash',
     'age': 290,
-    'country': 'Kenya',
-    'is_married': False,
-    'skills': ['JavaScript', 'React', 'Html/Css', 'Kotlin', 'Python'],
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Html/Css', 'Kotlin', 'Python','MongoDB','Node'],
     'address': {
         'street': 'Space street',
         'zipcode': '02210'
     }
     }
 #  Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
-if 'skills' in person.keys():
-    print (j)
-else:
-    print(False)
-#  Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+if 'skills' in person:
+    middle=len(person.keys())/2
+    print(middle)
 
-if 'skills' in person.keys() and 'skills'[-1] in  person.values():
-    print('Skills and Python available')
+#  Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+x='Python'
+if 'skills' in person and x in person['skills']:
+    print('Python present')
 else:
-    print('Not available')
-#  If a person skills has only JavaScript and React, print('He is a front end developer'), 
-# if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB,
-#  Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+    print('Python absent')
+
+#  If a person skills has only JavaScript and React, print('He is a front end developer'),
+if person['skills']=='JavaScript' and 'React' :
+    print('He is a Frontend Developer')
+# if the person skills has Node, Python, MongoDB, print('He is a backend developer'), 
+if person['skills']=='Node' and 'Python' and 'MongoDB':
+    print('He is a Backend Developer')
+#  Priif the person skills has React, Node and MongoDB,print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+elif person['skills']=='React' and 'Node' and 'MongoDB':
+    print('She is a fullstack Developer')
+else:
+    print('unknown title')
 #  If the person is married and if he lives in Finland, print the information in the following format:
 #     Asabeneh Yetayeh lives in Finland. He is married.
+if  person['is_married']== True and person['country'] =='Finland':
+    print(f"{person['first_name']} {person['last_name']} lives in {person['country']} . She is married")
