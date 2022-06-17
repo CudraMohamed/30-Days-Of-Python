@@ -96,3 +96,25 @@ print(x)
 
 #A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
 #Ask the user for their salary and year of service and print the net bonus amount. Write a python code to implement this scenario.
+
+
+#Assign 8 to the variable x and 15 to the variable y.
+#In the same cell, create 2 conditional statements.
+#Let the first one print "At least one of the conditions is satisfied." if x is greater than 3 or y is even.
+#Let the second one print "Neither condition is satisfied." if x is less than or equal to 3 and y is odd.
+#Change the values assigned to x and y and re-run the cell to verify your code still works.
+def my_fun():
+    x=8
+    y=14
+    if x>3 | y%2==0:
+        print("At least one of the conditions is satisfied")
+    else:
+        x <=3 and y%2!=0
+        print("Neither condition is satisfied")
+my_fun()
+
+#slice using(0,10,3)
+# x=(45,10,3,14,1,5,7,8)
+# c=x(0,10,3)
+# print(c)
+
