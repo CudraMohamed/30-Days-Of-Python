@@ -118,3 +118,36 @@ my_fun()
 # c=x(0,10,3)
 # print(c)
 
+test= 'akirachix'
+  
+# printing original string
+# print("The original string is : " + str(test))
+  
+# computing half index
+half= len(test) // 2
+  
+res = ''
+for i in range(len(test)):
+      
+    # uppercasing later half
+    if i >= half:
+      res += test[i].upper()
+    else :
+      res += test[i]
+          
+# printing result 
+print("The resultant string : " + str(res)) 
+
+
+
+# poa="Python"
+
+# half=len(poa)//2
+
+# res=''
+# for g in range(len(poa)):
+#     if g>=half:
+#         res+=poa[g].upper()
+#     else:
+#         res+=poa[g]
+#         print(str(g))
