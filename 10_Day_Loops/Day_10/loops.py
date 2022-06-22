@@ -126,24 +126,33 @@ for b_number in range(0,100+1):
     if b_number %2 !=0:
         print(b_number)
 # Exercises: Level 2
-# Use for loop to iterate from 0 to 100 and print the sum of all numbers.
-for num in range(0,100+1):
-    print(num + num)
-    
+# Use for loop to iterate from 0 to 100 and print the sum of all numbers. 
 # The sum of all numbers is 5050.
 # Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+# The sum of all evens is 2550. And the sum of all odds is 2500.
 numm=0
+odd = 0
 for num in range(0,100+1):
     if num%2==0:
-        if num<numm:
-            num+numm
-            print("Even =",numm)
-    # if num %2 !=0:
-    #     print("odd=",num+num)
-# The sum of all evens is 2550. And the sum of all odds is 2500.
+     numm+=num
+    else:
+        odd+=num
+        both=numm+odd
+print(f"Sum of even = {numm},Sum of Odd = {odd} ,Sum of both = {both} ")
+
+
 # Exercises: Level 3
 # Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
+country=['iceland','island','Kenya','Island']
+for x in country:
+    if 'land' in x: 
+        print(x)
 # This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruits=['banana', 'orange', 'mango', 'lemon']
+fruit_bucket=[]
+for fruit in fruits:
+        bucket=fruit_bucket.append(fruits[0::-1])
+print(fruit_bucket)
 # Go to the data folder and use the countries_data.py file.
 # What are the total number of languages in the data
 # Find the ten most spoken languages from the data

@@ -138,16 +138,50 @@ for i in range(len(test)):
 # printing result 
 print("The resultant string : " + str(res)) 
 
+children="childrenplayinginplayground"
+ #print the 1st half in capital letter and the other half in small letter.
+half_b= len(children)//2
+chilD=''
+for c in range(len(children)):
+    if c <= half_b:
+        chilD+=children[c].upper()
+    else:
+        chilD+=children[c]
+print(str(chilD))
 
+poa="Python"
+half=len(poa)//2
+res=''
+for g in range(len(poa)):
+    if g>=half:
+        res+=poa[g].upper()
+    else:
+        res+=poa[g]
+print(res)
 
-# poa="Python"
+# name='Tanasha'
+# half=len(name)//2
+# results=''
+# while x < len(name):
+#  if x <= half:
+#     results+=name.upper()
+#  else:
+#     results+=name
+# print(results)
+#Write a Python program to get a string from a given string
+# where all occurrences of its first char have been changed to '$', except the first char itself
+def replacing(t):
+    res=''
+    for d in range(len(t)):
+        if d ==d:
+            
+            res+=t[d].replace('e','a')
+    print(res)
+replacing('esdeasde')
 
-# half=len(poa)//2
-
-# res=''
-# for g in range(len(poa)):
-#     if g>=half:
-#         res+=poa[g].upper()
-#     else:
-#         res+=poa[g]
-#         print(str(g))
+def repl(you):
+    new=you[0]
+    strn=you.replace(new,'e')
+    strn=new+strn[1:]
+    print(strn)
+repl('alaaaaa')
