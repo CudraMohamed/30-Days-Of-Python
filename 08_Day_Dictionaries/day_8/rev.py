@@ -185,3 +185,35 @@ def repl(you):
     strn=new+strn[1:]
     print(strn)
 repl('alaaaaa')
+
+#Write a Python program to get a single string from two given strings, 
+#separated by a space and swap the first two characters of each string.
+#Sample String : 'abc', 'xyz'
+#Expected Result : 'xyc abz'
+def swap(word,wordt):
+    n_word=word[:2]+word[2:]
+    n_wordt=word
+    # p=word[0:1]
+    # word[0:1]=wordt[-1:-2:-1]
+    # wordt[-1:-2:-1]=p
+    # print(p)
+swap('you','leo')
+
+def generate_groups (team,*args):
+    print(team)
+    for i in args:
+        print(i)
+print(generate_groups('Team-1','Asabeneh','Brook','David','Eyob'))
+
+def fun_In_fun(n):
+    return n*n
+def smt (f,x):
+    return f(x)
+print(smt(fun_In_fun,3))
+print(3,2)
+
+def funmsg(msg):
+    def n():
+        print(msg)
+    n()
+funmsg('Fun')

@@ -151,8 +151,9 @@ for x in country:
 fruits=['banana', 'orange', 'mango', 'lemon']
 fruit_bucket=[]
 for fruit in fruits:
-        bucket=fruit_bucket.append(fruits[0::-1])
-print(fruit_bucket)
+        fruit_bucket.append(fruits[::-1])
+        fruit_bucket=fruits[fruit]
+print(fruit_bucket.append(fruit))
 # Go to the data folder and use the countries_data.py file.
 # What are the total number of languages in the data
 # Find the ten most spoken languages from the data
